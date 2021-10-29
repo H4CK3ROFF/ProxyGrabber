@@ -1,0 +1,34 @@
+﻿<Window x:Class="ProxyGrabber.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProxyGrabber"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="200" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FF181818" Height="250" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top">
+        
+        <Grid Name="TitleBoard" Height="25" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF202020" MouseLeftButtonDown="TitleBoardClickDown">
+            <TextBlock Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" TextAlignment="Center" Margin="5, 0, 0, 0">Proxy Grabber</TextBlock>
+        </Grid>
+        
+        <Border Name="MinimizeButton" Height="25" Width="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150, 0, 0, 0" MouseLeftButtonUp="MinimizeButtonClickUp" MouseLeftButtonDown="MinimizeButtonClickDown" MouseEnter="MinimizeButtonMouseEnter" MouseLeave="MinimizeButtonMouseLeave">
+            <TextBlock Foreground="White" HorizontalAlignment="Center">_</TextBlock>
+        </Border>
+
+        <Border Name="CloseButton" Height="25" Width="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="175, 0, 0, 0" MouseLeftButtonUp="CloseButtonClickUp" MouseLeftButtonDown="CloseButtonClickDown" MouseEnter="CloseButtonMouseEnter" MouseLeave="CloseButtonMouseLeave">
+            <TextBlock Foreground="White" HorizontalAlignment="Center" FontSize="13">x</TextBlock>
+        </Border>
+
+        <TextBox Name="ProxyList" Height="170" Width="180" BorderThickness="0" Background="#FF121212" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10, 35, 0, 0"></TextBox>
+        
+        <Border Name="GetProxyButton" Height="25" Width="80" Background="#FF121212" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10, 215, 0, 0" MouseLeftButtonUp="GetProxyButtonClickUp" MouseLeftButtonDown="GetProxyButtonClickDown" MouseEnter="GetProxyButtonMouseEnter" MouseLeave="GetProxyButtonMouseLeave">
+            <TextBlock Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="13">Get Proxy</TextBlock>
+        </Border>
+
+        <Border Name="SaveProxyButton" Height="25" Width="80" Background="#FF121212" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="110, 215, 0, 0" MouseLeftButtonUp="SaveProxyButtonClickUp" MouseLeftButtonDown="SaveProxyButtonClickDown" MouseEnter="SaveProxyButtonMouseEnter" MouseLeave="SaveProxyButtonMouseLeave">
+            <TextBlock Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="13">Save Proxy</TextBlock>
+        </Border>
+
+    </Grid>
+</Window>
